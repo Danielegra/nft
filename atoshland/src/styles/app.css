@@ -2,3 +2,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* transition between pages */
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: all 0.2s ease;
+}
+
+.fade-enter-from {
+    opacity: 1;
+    transform: translate(500px);
+}
+
+.fade-leave-to {
+    opacity: 0;
+    transform: translate(-500px);
+}
